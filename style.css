@@ -21,7 +21,7 @@
     border-radius: 10px;
     width: 20px;
   }
-
+/* W3schools code START */
   * {
     box-sizing: border-box;
   }
@@ -65,6 +65,7 @@
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: black;
     color: #ffcc00;
+    cursor: pointer;
   }
   
   .dropdown-content {
@@ -124,8 +125,56 @@
       height: auto;
     }
   }
+/* W3schools code END */
 
 .title {
   text-align: center;
   font-size: 10vh;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 4vh;
+}
+
+#active { /* current link indicator */
+  color: #ffcc009c;
+}
+
+#active:hover {
+  color: #ffcc00;
+  cursor: pointer;
+}
+
+.visit-button {
+  padding: 10px;
+  background-color: #990000;
+  color: white;
+  border-radius: 10%;
+  margin: 3vh 47.5vw;
+  cursor: pointer;
+  width: 5vw;
+}
+
+.card-img, .card-txt {
+  width: 50vw;
+}
+
+.card-txt {
+  background-color: #990000;
+  color: white;
+  font-size: 1vw;
+  line-height: 1.5;
+}
+
+.row {
+  display: flex;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.link {
+  color: #ffcc00;
 }
