@@ -165,6 +165,7 @@
   color: white;
   font-size: 1vw;
   line-height: 1.5;
+  padding: 1vw;
 }
 
 .row {
@@ -177,4 +178,38 @@ body {
 
 .link {
   color: #ffcc00;
+  font-weight: bold;
+}
+
+.visit-button:hover {
+  animation-name: scale;
+  animation-timing-function: linear;
+  animation-duration: 50ms;
+  background-color: #c40000;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scale {
+  from {
+    scale: 100%;
+  }
+  to {
+    scale: 110%;
+  }
+}
+
+.visit-button:active {
+  animation-name: scalea;
+  animation-timing-function: linear;
+  animation-duration: 50ms;
+}
+
+@keyframes scalea {
+  from {
+    scale: 100%;
+  }
+  to {
+    scale: 80%;
+    rotate: 10deg;
+  }
 }
