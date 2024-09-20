@@ -112,7 +112,7 @@
   }
   
   /* Clear floats after the columns */
-  .row:after {
+  .nav-row:after {
     content: "";
     display: table;
     clear: both;
@@ -212,4 +212,12 @@ body {
     scale: 80%;
     rotate: 10deg;
   }
+}
+
+div {
+  margin: 1vw;
+}
+
+.navbar, .dropdown, .dropdown-content, .column, .header, .nav-row {
+  margin: 0;
 }
