@@ -39,7 +39,8 @@ searchInput.addEventListener('input', () => {
 
     filteredLinks.forEach(link => {
         const listItem = document.createElement('li');
-        listItem.innerHTML = `<a href="${link.url}" target="_blank">${link.name}</a>`;
+        listItem.setAttribute('class', 'search-link');
+        listItem.innerHTML = `<a href="${link.url}" class="search-link" target="_blank">${link.name}</a>`;
         listItem.style.display = 'block'; // Show matching results
         resultsList.appendChild(listItem);
     });

@@ -259,3 +259,12 @@ table {
 .container-right {
   border-left: #ffcc00;
 }
+
+.search-link {
+  color: white;
+  background-color: #990000;
+}
+
+.search-link:hover {
+  color: #ffcc00;
+}
