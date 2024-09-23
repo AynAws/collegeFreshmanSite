@@ -244,6 +244,24 @@ table {
   top: 20vh;
 }
 
+.vl1to3 {
+  border-left: 6px solid #ffcc00;
+  height: 5000px;
+  position: absolute;
+  left: 33%;
+  margin-left: -3px;
+  top: 20vh;
+}
+
+.vl2to3 {
+  border-left: 6px solid #ffcc00;
+  height: 5000px;
+  position: absolute;
+  left: 66%;
+  margin-left: -3px;
+  top: 20vh;
+}
+
 .container {
   width: 50%;
   float: left;
@@ -252,12 +270,12 @@ table {
   overflow: hidden;
 }
 
-.container-left {
-  border: solid, white #ffcc00 white white;
-}
-
-.container-right {
-  border-left: #ffcc00;
+.container1to3 {
+  width: 33%;
+  float: left;
+  word-wrap: break-word;
+  margin: 0;
+  overflow: hidden;
 }
 
 .search-link {
@@ -267,4 +285,10 @@ table {
 
 .search-link:hover {
   color: #ffcc00;
+}
+
+.img1to3 {
+  width: auto;
+  display: block;
+  margin: auto;
 }

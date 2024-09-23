@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 /*chat GPT*/
 body {
     font-family: Arial, sans-serif;
