@@ -5,8 +5,16 @@ function generateCalender(year, season) {
     let fall = false;
     let spring = false;
     let summer = false;
-    season==='fall' ? fall=true : season==='spring' ? spring=true : season==='summer' ? summer=true : season=null; // makes conditionals easier
-    fall ? instructionalDays=68 : spring ? instructionalDays=73 ? summer : instructionalDays=57 : instructionalDays=null; // Records instructional days based off of time of year
+    //season==='fall' ? fall=true : season==='spring' ? spring=true : season==='summer' ? summer=true : season=null; // makes conditionals easier
+    if (season === 'fall') {
+      instructionalDays = 68;
+  } else if (season === 'spring') {
+      instructionalDays = 73;
+  } else if (season === 'summer') {
+      instructionalDays = 57;
+  } else {
+      instructionalDays = null;
+  } // Records instructional days based off of time of year
     /*let y2024 = false;
     let y2025 = false;
     let y2026 = false;
@@ -14,14 +22,15 @@ function generateCalender(year, season) {
     const table = document.createElement('table');
     table.setAttribute('id', 'calender');
     if (document.getElementById('calender')) {
-        skibidi.removeChild(table);
+      document.getElementById('calender').remove();
     }
     // actual code starts here
     switch (year) {
         case 2024:
-            if (fall) {
+            if (season==='fall') {
                 console.log('fall 2024');
                 table.innerHTML=`
+                <p>${instructionalDays} instructional days.</p>
                 <tr>
                   <td>
                     Open Registration
@@ -116,9 +125,10 @@ function generateCalender(year, season) {
             break;
 
         case 2025:
-            if (spring) {
+            if (season==='spring') {
                 console.log('spring 2025');
                 table.innerHTML=`
+                <p>${instructionalDays} instructional days.</p>
                 <tr>
                   <td>
                     Open Registration
@@ -192,20 +202,152 @@ function generateCalender(year, season) {
                   </td>
                 </tr>
                 `
-            } else if (summer) {
+            } else if (season==='summer') {
                 console.log('summer 2025');
-            } else if (fall) {
+                table.innerHTML=`
+                <p>${instructionalDays} instructional days.</p>
+                <tr>
+                  <td>
+                    Registration
+                  </td>
+                  <td>
+                    May 19-20
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Classes Begin
+                  </td>
+                  <td>
+                    May 21
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Memorial Day Holiday
+                  </td>
+                  <td>
+                    May 26
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Juneteenth Holiday
+                  </td>
+                  <td>
+                    June 19
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Independence Day Holiday
+                  </td>
+                  <td>
+                    July 4
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Classes End
+                  </td>
+                  <td>
+                    August 12
+                  </td>
+                </tr>
+                `
+            } else if (season==='fall') {
                 console.log('fall 2025');
-            }
-            break;
-
-        case 2026:
-            if (spring) {
-                console.log('spring 2026');
-            } else if (summer) {
-                console.log('summer 2026');
-            } else if (fall) {
-                console.log('fall 2026');
+                table.innerHTML=`
+                <p>${instructionalDays} instructional days.</p>
+                <tr>
+                  <td>
+                    Open Registration
+                  </td>
+                  <td>
+                    August 18-22
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  Move-In
+                  </td>
+                  <td>
+                  August 20
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  Classes Begin
+                  </td>
+                  <td>
+                  August 25
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  Labor Day Holiday
+                  </td>
+                  <td>
+                  September 1
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  Fall Recess
+                  </td>
+                  <td>
+                  October 9-10
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  Veterans Day Holiday
+                  </td>
+                  <td>
+                  November 11
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  Thanksgiving Holiday
+                  </td>
+                  <td>
+                  November 26-30
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  Classes End
+                  </td>
+                  <td>
+                  December 5
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  Study Days
+                  </td>
+                  <td>
+                  December 6-9
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  Exams
+                  </td>
+                  <td>
+                  December 10-17
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  Winter Recess Holiday
+                  </td>
+                  <td>
+                  December 18-January 11
+                  </td>
+                </tr>
+                `
             }
             break;
     }
