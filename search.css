@@ -1,0 +1,33 @@
+body {
+    overflow: hidden;
+}
+
+/*chat GPT*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+.search-container {
+    margin: 20px;
+}
+
+#searchInput {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.results-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.results-list li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    border-radius: 5px;
+    display: none; /* Hide results by default */
+}

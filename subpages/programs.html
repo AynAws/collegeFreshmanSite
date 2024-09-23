@@ -18,12 +18,16 @@
         />
         <link 
             rel="stylesheet" 
-            href="/collegeFreshmanSite/style.css"
+            href="/style.css"
+        />
+        <link 
+            rel="stylesheet" 
+            href="/search.css"
         />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
 
-    <body>
+    <body style="overflow: hidden;">
             <div class="navbar">
               <a href="/index.html">Home</a>
               <div class="dropdown">
@@ -37,7 +41,7 @@
                   <div class="nav-row">
                     <div class="column">
                       <h3>Academics</h3>
-                      <a href="programs.html">Schools & Programs</a>
+                      <a href="programs.html" id="active">Schools & Programs</a>
                       <a href="study.html">Undergraduate Study</a>
                       <a href="schedule.html">Calender & Schedule</a>
                     </div>
@@ -49,13 +53,32 @@
                     </div>
                     <div class="column">
                       <h3>Admissions & Aid</h3>
-                      <a href="admissions.html" id="active">Undergraduate Admissions</a>
+                      <a href="admissions.html">Undergraduate Admissions</a>
                       <a href="aid.html">Financial Aid</a>
                       <a href="visit.html">Visit USC</a>
                     </div>
                   </div>
                 </div>
               </div> 
+            </div>
+
+            <h1 class="title">Schools & Programs</h1>
+            <div class="vl"></div>
+            <div cid="container">
+              <div class="container container-left">
+                <h1 class="subtitle">Schools</h1>
+                <div class="search-container"> <!--made by chat GPT (searchbar)-->
+                  <input type="text" id="searchInput" placeholder="The School of...">
+              </div>
+              <ul id="resultsList" class="results-list"></ul>
+              </div>
+              <div class="container container-right">
+                <h1 class="subtitle">High School Programs</h1>
+                <div class="card-txt">
+                  USC Summer Programs extends a tradition of excellence to outstanding high school students through a diverse offering of four-week summer courses. As a “Summer Trojan,” you will balance academic and campus life as you prepare for college — and earn college credit.<br><br>USC Summer Programs extends a tradition of excellence to outstanding high school students through a diverse offering of four-week summer courses. As a “Summer Trojan,” you will balance academic and campus life as you prepare for college — and earn college credit.
+                </div>
+                <a href="https://usc.smapply.io/" target="_blank"><button class="visit-button">Apply Now</button></a>
+              </div>
             </div>
             <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -68,5 +91,6 @@
             crossorigin="anonymous"
         ></script>
         <script src="/main.js"></script>
+        <script src="/search.js"></script>
     </body>
 </html>

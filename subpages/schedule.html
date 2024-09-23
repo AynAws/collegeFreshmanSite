@@ -18,7 +18,7 @@
         />
         <link 
             rel="stylesheet" 
-            href="/collegeFreshmanSite/style.css"
+            href="/style.css"
         />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
@@ -39,7 +39,7 @@
                       <h3>Academics</h3>
                       <a href="programs.html">Schools & Programs</a>
                       <a href="study.html">Undergraduate Study</a>
-                      <a href="schedule.html">Calender & Schedule</a>
+                      <a href="schedule.html" id="active">Calender & Schedule</a>
                     </div>
                     <div class="column">
                       <h3>Life at USC</h3>
@@ -49,13 +49,24 @@
                     </div>
                     <div class="column">
                       <h3>Admissions & Aid</h3>
-                      <a href="admissions.html" id="active">Undergraduate Admissions</a>
+                      <a href="admissions.html">Undergraduate Admissions</a>
                       <a href="aid.html">Financial Aid</a>
                       <a href="visit.html">Visit USC</a>
                     </div>
                   </div>
                 </div>
               </div> 
+            </div>
+
+            <h1 class="title">Calender & Schedule</h1>
+            <h1 class="subtitle">Important Dates</h1>
+            <div class="row">
+              <button class="visit-button" onclick="generateCalender(2024, 'fall')">Fall 2024</button>
+              <button class="visit-button" onclick="generateCalender(2025, 'spring')">Spring 2025</button>
+              <button class="visit-button" onclick="generateCalender(2025, 'summer')">Summer 2025</button>
+              <button class="visit-button" onclick="generateCalender(2025, 'fall')">Fall 2025</button>
+            </div>
+            <div id="skibidi">
             </div>
             <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -68,5 +79,6 @@
             crossorigin="anonymous"
         ></script>
         <script src="/main.js"></script>
+        <script src="/schedule.js"></script>
     </body>
 </html>
