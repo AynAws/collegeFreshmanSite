@@ -151,9 +151,10 @@
   background-color: #990000;
   color: white;
   border-radius: 10%;
-  margin: 3vh 47.5vw;
   cursor: pointer;
   width: 5vw;
+  display: block;
+  margin: 0 auto;
 }
 
 .card-img, .card-txt {
@@ -220,4 +221,41 @@ div {
 
 .navbar, .dropdown, .dropdown-content, .column, .header, .nav-row {
   margin: 0;
+}
+
+iframe {
+  margin: 0 auto;
+  display: block;
+}
+
+tr:nth-child(even) {background-color: #990000b9; color: white;}
+tr:nth-child(odd) {background-color: #ffcc00bb; color: black;}
+table {
+  color: black;
+  width: 50%;
+}
+
+.vl {
+  border-left: 6px solid #ffcc00;
+  height: 5000px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 20vh;
+}
+
+.container {
+  width: 50%;
+  float: left;
+  word-wrap: break-word;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container-left {
+  border: solid, white #ffcc00 white white;
+}
+
+.container-right {
+  border-left: #ffcc00;
 }

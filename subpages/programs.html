@@ -20,6 +20,10 @@
             rel="stylesheet" 
             href="/style.css"
         />
+        <link 
+            rel="stylesheet" 
+            href="/search.css"
+        />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
 
@@ -57,6 +61,22 @@
                 </div>
               </div> 
             </div>
+
+            <h1 class="title">Schools & Programs</h1>
+            <!--<div class="vl"></div>-->
+            <div cid="container">
+              <div class="container container-left">
+                <h1 class="subtitle">Schools</h1>
+                <div class="search-container"> <!--made by chat GPT (searchbar)-->
+                  <input type="text" id="searchInput" placeholder="Search...">
+              </div>
+              <ul id="resultsList" class="results-list"></ul>
+              </div>
+              <div class="container container-right">
+                <h1 class="subtitle">High School Programs</h1>
+                <a href="https://usc.smapply.io/" target="_blank"><button class="visit-button">Apply to Summer Programs Now</button></a>
+              </div>
+            </div>
             <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -68,5 +88,6 @@
             crossorigin="anonymous"
         ></script>
         <script src="/main.js"></script>
+        <script src="/search.js"></script>
     </body>
 </html>
