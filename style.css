@@ -288,7 +288,15 @@ table {
 }
 
 .img1to3 {
-  width: auto;
+  width: 55%;
   display: block;
   margin: auto;
+}
+
+.card-txt-small {
+  background-color: #990000;
+  color: white;
+  line-height: 1.5;
+  padding: 1vw;
+  font-weight: 1vh;
 }
